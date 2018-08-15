@@ -103,11 +103,25 @@ article {
     clear: left;
     margin-left: 200px;
 }
-#borderCollie {
+.borderCollie {
     border: solid;
     border-width: 3px;
     border-color: #777;
     border-bottom: none;
     border-top: none;
     border-left: none;
+}
+@media only screen and (max-width: 980px) {
+    [class*="col-lg"] {
+        width:100%;
+    }
+}
+@media only screen and (max-width: 768px) {
+    [class*="col-md"] {
+        width:50%;
+
+}
+@media only screen and (max-width: 640px) {
+    [class*="col-s"] {
+        width:30%;
 }
